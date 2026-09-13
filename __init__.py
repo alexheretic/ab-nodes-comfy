@@ -38,7 +38,7 @@ def prune_cache(cache_dir, max_items):
     for path in entries[: len(entries) - max_items]:
         try:
             os.remove(path)
-            logger.info("Pruned: %s", os.path.basename(path))
+            logger.debug("Pruned: %s", os.path.basename(path))
         except Exception:
             logger.warning("Failed to prune %s", path, exc_info=True)
 
