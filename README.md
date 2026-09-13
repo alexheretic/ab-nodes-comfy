@@ -7,3 +7,10 @@ Custom nodes for ComfyUI.
 * **CLIPVisionEncodeDiskCache**: CLIPVisionEncode with a disk cache of the 30 most recently used encodes.
   Stored in `./user/ab-nodes/clip_vision_encode`. This can help prevent the clip vision model being loaded
   into VRAM when encoding the same images multiple times.
+
+## Install
+Clone into custom_nodes dir:
+```sh
+cd ComfyUI/custom_nodes
+git clone https://github.com/alexheretic/ab-nodes-comfy
+```
